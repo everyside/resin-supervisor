@@ -16,7 +16,7 @@ func connectivityCheck() {
 
 }
 
-func waitForEver() {
+func waitForever() {
 	c := make(chan bool)
 	<-c
 }
@@ -45,5 +45,5 @@ func main() {
 			StartApi(superConfig.ListenPort, applicationManager)
 		}
 	}
-	waitForEver()
+	waitForever()
 }
